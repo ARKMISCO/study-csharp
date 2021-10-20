@@ -1,14 +1,20 @@
 ﻿using System;
 
-namespace ConsoleApp8
+namespace ConsoleApp10
 {
-    class Program
+    class Program // while 문으로 구구단 만들기
     {
         static void Main(string[] args)
         {
-            var A = new int[10];
-            foreach(int i in A) {
-                Console.WriteLine(i);
+            int i = 1; // i곱할것인지 j x i = ?
+            int j = 2; // j단 곱할것인지 j x i = ?
+
+            while (i < 10) ;
+            {
+                Console.WriteLine($"{j} x {i} = {j * i}");
+                {
+                    
+                }
             }
         }
     }
