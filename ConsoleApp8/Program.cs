@@ -1,18 +1,32 @@
 ﻿using System;
 
-namespace ConsoleApp1
+namespace ConsoleApp10 // https://blog.hexabrain.net/137
 {
-    class Program
+    class misco
     {
-        static int intPlus(int a, int b)
+        public String age;
+        public String sex;
+        public String height;
+        public String name;
+
+        public void hello()
         {
-            int result = a + b;
-            return result;
+            Console.WriteLine("안녕하세요.");
         }
-        static void Main(string[] args)
+    }
+    class progarm
+    {
+        static void main(String[] args)
         {
-            int nPlus = intPlus(10, 20);
-            Console.WriteLine(nPlus);
+            misco misco = new misco();
+            misco.name = "안동건";
+            misco.sex = "남자";
+            misco.height = "170";
+            misco.age = "18";
+
+            misco.hello();
+
+            Console.WriteLine("{0}는 {1}이며 {2}살이며 {3}cm이다", misco.name, misco.sex, misco.age, misco.height);
         }
     }
 }
