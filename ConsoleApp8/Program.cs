@@ -1,32 +1,21 @@
 ﻿using System;
+using static System.Console;
+using System.Text;
+using System.IO;
 
-namespace ConsoleApp10 // https://blog.hexabrain.net/137
+namespace baekjoon
 {
-    class misco
+    class MainApp
     {
-        public String age;
-        public String sex;
-        public String height;
-        public String name;
-
-        public void hello()
+        static void Main()
         {
-            Console.WriteLine("안녕하세요.");
-        }
-    }
-    class progarm
-    {
-        static void main(String[] args)
-        {
-            misco misco = new misco();
-            misco.name = "안동건";
-            misco.sex = "남자";
-            misco.height = "170";
-            misco.age = "18";
-
-            misco.hello();
-
-            Console.WriteLine("{0}는 {1}이며 {2}살이며 {3}cm이다", misco.name, misco.sex, misco.age, misco.height);
+            for (int a = 1; a < 10; a++)
+            {
+                for (int b = 0; b < a; b++)
+                    Console.Write("★");
+                Console.Write("\n");
+            }
+                //Console.WriteLine(a);
         }
     }
 }
