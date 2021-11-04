@@ -5,27 +5,33 @@ using static System.Console;
 using System.Text;
 using System.IO;
 
-namespace baekjoon
+public class 여친
 {
-    class MainApp
+    public int 나이 = 25;
+    private int 무게 = 60;
+
+    public void SetWeight(int x)
     {
-        static void Main()
-        {
-            int number; //랜덤 숫자 저장
-            int buy; // 구매 할 개수 숫자 저장
+        몸무게 = x;
+    }
 
-            Console.Write("구매 할 로또의 개수를 구하시오 : ");
-            buy = int.Parse(Console.ReadLine());
+    public int GetWight()
+    {
+        return 몸무게;
+    }
+}
 
-            while (buy-- != 0) {
-                Random rand = new Random();
-                for (int b = 5; b <= 6; b++)
-                {
-                    number = rand.Next(46);
-                    Console.Write(number + " ");
-                }
-                Console.Write("\n");
-            }
-        }
+class 여친
+{
+    public int 나이 = 25;
+    private int 무게 = 70;
+}
+
+class program
+{
+    static void Main(string[] args)
+    {
+        여친 none = new 여친();
+        Console.WriteLine("나이 : "+ none.나이);
     }
 }
