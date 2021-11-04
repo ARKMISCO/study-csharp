@@ -3,25 +3,27 @@ class a
 {
     static void Main()
     {
-        string[] s = Console.ReadLine().Split(' ');
-        int numA = int.Parse(s[0]);
-        int numB = int.Parse(s[1]);
+        int score = int.Parse(Console.ReadLine());
+        if (score > 100 || score < 0) return;
 
-        if (numA > numB)
+        if (score <= 90)
         {
-
-            Console.WriteLine(">");
+            Console.WriteLine("A");
         }
-        else if (numA < numB)
+        else if (score <= 80)
         {
-
-            Console.WriteLine("<");
+            Console.WriteLine("B");
         }
-        else if (numA == numB)
+        else if (score <= 70)
         {
-            Console.WriteLine("==");
+            Console.WriteLine("C");
         }
-
+        else if (score <= 60)
+        {
+            Console.WriteLine("C");
+        }
+        else
+            Console.WriteLine("F");
     }
 
 }
